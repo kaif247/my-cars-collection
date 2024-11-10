@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"a href="code.css">
+    <title>Registration your self</title>
+    
+</head>
+<body image src="ai.jpg" ALIGN="CENTER">
+
+    
+    <div class="form-container">
+        <h2><b>regester you self</b></h2>
+        <form action="/action_page.php" target="_blank" hmail.com
+        >
+        <div class="error-message" id="error-message">Please fill out all raquirnment</div>
+        <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" placeholder="Enter Your First Name">
+        </div>
+        
+        <div class="form-group">
+            <label for="lastName"required name="Name">Last Name</label>
+            <input type="text" id="lastName" placeholder="Enter Your Last NAME">
+        </div>
+        <div class="form-group">
+            <label for="email"required name="Name">Email</label>
+            <input type="email" id="email" placeholder="Enter Your Email">
+        </div>
+        <div class="form-group">
+            <label for="password"  required name="Name">Password</label>
+            <input type="password" id="password"placeholder="Enter Your Password">
+        </div>
+        <div class="form-group">
+            <label for="dob"required name="Name">Date of Birth</label>
+            <input type="date" id="dob">
+        </div>
+        <div class="form-group">
+            <label for="gender"required name="Name">Gender</label>
+            <input type="text" id="gender"placeholder="Enter Your Gender">
+        </div>
+        <div class="form-actions">
+            <button class="register" onclick="register()">Register</button>
+            <button class="login" onclick="login()">Login With Facebook</button>
+        </div>
+    </div>
+    
+</form>
+     
+
+    <script>
+        function register() {
+            const firstName = document.getElementById('firstName').value;
+            const lastName = document.getElementById('lastName').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const dob = document.getElementById('dob').value;
+            const gender = document.getElementById('gender').value;
+            const errorMessage = document.getElementById('error-message');
+
+            if (!firstName || !lastName || !email || !password || !dob || !gender) {
+                errorMessage.style.display = 'block';
+            } else {
+                window.location.href = "file:///C:/Users/IT/Desktop/NEW%20website%20project/gamming%20website/code.html";
+                alert('  MKWEBGURU Registration Successful!');
+                // Here you can add your form submission code
+            }
+        }
+        function login() {
+            const firstName = document.getElementById('firstName').value;
+            const lastName = document.getElementById('lastName').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const dob = document.getElementById('dob').value;
+            const gender = document.getElementById('gender').value;
+            const errorMessage = document.getElementById('error-message');
+            if (!firstName || !lastName || !email || !password || !dob || !gender) {
+                errorMessage.style.display = 'block';
+            } else {
+                window.location.href = "code.html";
+                alert('  you login to MK WEBGURU');
+                // Here you can add your form submission code
+            }
+       
+            }
+        
+
+       
+    </script>
+</body>
+</html>
